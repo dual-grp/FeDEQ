@@ -1,9 +1,9 @@
-# Federated Deep Equilibrium Learning: A Compact Shared Representation for Edge Efficiency
-This repository implements all experiments for the paper **Federated Deep Equilibrium Learning: A Compact Shared Representation for Edge Efficiency**.
+# Federated Deep Equilibrium Learning: Harnessing Compact Global Representations to Enhance Personalization
+This repository implements all experiments for the paper **Federated Deep Equilibrium Learning: Harnessing Compact Global Representations to Enhance Personalization** (CIKM 2024).
 
-Authors:
+Authors: Long Tan Le, Tuan Dung Nguyen, Tung-Anh Nguyen, Choong Seon Hong, Suranga Seneviratne, Wei Bao, Nguyen H. Tran
 
-Paper Link:
+Paper Link: [https://doi.org/10.1145/3627673.3679752](https://doi.org/10.1145/3627673.3679752)
 
 ---
 
@@ -33,14 +33,6 @@ femnist_image | FEMNIST        | ResNet20, DEQ-ResNet-S     | Character Recognit
 shakespeare_character | Shakespeare    | Transformer-8, DEQ-Transformer        | Next-Character prediction |
 
 <!-- mdformat on -->
-
-All datasets will be saved at ``./data/``.
-
-Link download the dataset folder: [Link](https://drive.google.com/file/d/1-15jPcxBcQy5okgX-9ddws4Ib0MIPEXq/view?usp=sharing)
-
-Please extract the zip file and replace the original ``./data/`` folder by the extraced ``./data/`` folder.
-
-***The models and the datasets must match!!! Otherwise an error will occur.*** ❗️
 
 ## Directory structure
 
@@ -98,27 +90,18 @@ bash runners/<dataset>/run_<algorithm>.sh [other flags]
 | -r     | --repeat           | Number of times to repeat the experiment                  | 1             |         |
 | -g     | --gpu              | The ID of GPU used to run experiments                     | 0             |         |
 
-### Example:
+## Citation
 
-Run algorithms to evaluate personalization
-
-```bash
-bash runners/femnist/run_fedeq.sh -r 1 -g 0
-bash runners/cifar10/run_fedeq.sh -r 1 -g 0
-bash runners/cifar100/run_fedeq.sh -r 1 -g 0
-bash runners/shakespeare/run_fedeq.sh -r 1 -g 0
 ```
-
-Run algorithms to evaluate the generalization to unseen clients
-
-```bash
-bash runners/femnist/run_fedeq.sh -fu 0.1 -r 1 -g 0
-bash runners/cifar10/run_fedeq.sh -fu 0.1 -r 1 -g 0
-bash runners/cifar100/run_fedeq.sh -fu 0.1 -r 1 -g 0
-bash runners/shakespeare/run_fedeq.sh -fu 0.1 -r 1 -g 0
+@inproceedings{10.1145/3627673.3679752,
+author = {Le, Long Tan and Nguyen, Tuan Dung and Nguyen, Tung-Anh and Hong, Choong Seon and Seneviratne, Suranga and Bao, Wei and Tran, Nguyen H.},
+title = {Federated Deep Equilibrium Learning: Harnessing Compact Global Representations to Enhance Personalization},
+year = {2024},
+publisher = {Association for Computing Machinery},
+pages = {1132–1142},
+series = {CIKM '24}
+}
 ```
-
----
 
 ## References
 
