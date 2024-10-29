@@ -1,5 +1,5 @@
 # Federated Deep Equilibrium Learning
-This repository implements all experiments for the paper **Federated Deep Equilibrium Learning: Harnessing Compact Global Representations to Enhance Personalization** (CIKM 2024).
+This repository contains reference code for the paper **Federated Deep Equilibrium Learning: Harnessing Compact Global Representations to Enhance Personalization** (CIKM 2024).
 
 Authors: Long Tan Le, Tuan Dung Nguyen, Tung-Anh Nguyen, Choong Seon Hong, Suranga Seneviratne, Wei Bao, Nguyen H. Tran
 
